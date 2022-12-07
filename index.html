@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InSync</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+    <script src="script.js"></script>
+</head>
+
+<body onload="init()">
+    <header id="header" class="displayflex between">
+        <div onclick="window.location.reload()" class="cursor displayflex columngap align" title="reset page">
+            <img class="logo" src="img/logo.png">
+            <h1>InSync</h1>
+        </div>
+        <div class="relative">
+            <input title="search" id="input" class="border5 padding5 input" placeholder="Search" type="text"
+                onclick="tikTak()" onkeydown="search()">
+            <div class="icon absolute2 cursor">
+                <img title="search" onclick="tikTak()" src="img/search.png">
+            </div>
+            <div class="absolute border5" id="search"></div>
+        </div>
+        <icons class="displayflex columngap">
+            <div class="icon" title="home">
+                <img src="img/home.png">
+            </div>
+            <div onclick="changeProfile()" class="icon" title="profile">
+                <img id="headerprofile" src="img/man.png">
+            </div>
+        </icons>
+    </header>
+    <div class="content displayflex">
+        <div class="post-content displayflex column" id="content"></div>
+        <div class="rail">
+            <div id="info" class="info"></div>
+        </div>
+    </div>
+    <div id="changeprofile" class="displayflex center changeprofile displaynone">
+        <form onsubmit="finishChange(); return false" class="border5 displayflex column center relative">
+            Name:
+            <input placeholder="Mr" id="namechange" class="border5" type="text" name="name" required><br>
+            Surname:
+            <input placeholder="Bing" id="surnamechange" class="border5" type="text" name="surname" required><br>
+            Choose Your Avatar:
+            <div class="displayflex evenly">
+                <div onclick="setAvatar('male')" class="avatar">
+                    <img class="round" id="maleavatarchange" src="img/man.png">
+                </div>
+                <div onclick="setAvatar('female')" class="avatar">
+                    <img class="round" id="femaleavatarchange" src="img/woman.png">
+                </div>
+            </div>
+            Password:
+            <input placeholder="*****" id="passwordchange" class="border5" type="password" name="password" required><br>
+            <input class="border5 submit cursor" type="submit" placeholder="Confirm">
+            <p onclick="dismissChange()" class="colorw cursor displayflex center">X</p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: unset;
+}
+
+h1 {
+    margin: unset;
+}
+
+h2 {
+    margin: unset;
+}
+
+h3 {
+    margin: unset;
+}
+
+h4 {
+    margin: unset;
+}
+
+input {
+    height: 30px;
+    font-size: 14px;
+}
+
+header {
+    padding: 10px 12vw;
+    position: sticky;
+    top: 0;
+    min-height: 48px;
+    background-color: white;
+    border: solid 2px #EFE7E3;
+    z-index: 1;
+}
+
+header h1 {
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: normal;
+}
+
+p {
+    margin: unset;
+}
+
+form input {
+    margin-bottom: 5px;
+    background-color: #F7F3F1;
+    border: solid 2px #EFE7E3;
+    outline: unset;
+}
+
+
+
+.submit {
+    background-color: #62A6FD;
+    color: white;
+}
+
+.submit:active {
+    color: #72D1FB;
+}
+
+.input {
+    height: 30px;
+    font-size: 14px;
+    width: 300px;
+    border: unset;
+    outline: none;
+    background-color: #F7F3F1;
+    border: solid 2px #EFE7E3;
+}
+
+.content {
+    padding: 20px 12vw;
+    background-color: aliceblue;
+}
+
+.post-content {
+    width: 100%;
+}
+
+.focusinvisible:focus {
+    display: none;
+}
+
+.post {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.rail {
+    width: 40%;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.info {
+    position: sticky;
+    top: 102px;
+}
+
+.profilelogo {
+    height: 50px;
+    width: 50px;
+    border: solid #1F51FF;
+}
+
+.headline {
+    border-top: solid 2px #EFE7E3;
+    border-left: solid 2px #EFE7E3;
+    border-right: solid 2px #EFE7E3;
+}
+
+.headlinelogo {
+    height: 50px;
+    width: 50px;
+    border: solid #0FFF50;
+}
+
+.headlinelogosmall {
+    height: 38px;
+    width: 38px;
+}
+
+.post-img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 800px;
+}
+
+.comments {
+    overflow: auto;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+.comment {
+    border-top: solid 2px #EFE7E3;
+    border-bottom: solid 2px #EFE7E3;
+}
+
+.comment input {
+    width: 100%;
+    border: unset;
+    outline: unset;
+}
+
+.profile {
+    text-decoration: unset;
+}
+
+.logo {
+    height: 48px;
+    width: 48px;
+}
+
+.backgroundtext {
+    color: #757575;
+}
+
+.follow {
+    background-color: #62A6FD;
+    color: white;
+}
+
+.follow:active {
+    color: #72D1FB;
+}
+
+.sideborder {
+    border-left: solid 2px #EFE7E3;
+    border-right: solid 2px #EFE7E3;
+}
+
+.topbottomborder {
+    border-top: solid 2px #EFE7E3;
+    border-bottom: solid 2px #EFE7E3;
+}
+
+.colorw {
+    color: #72D1FB;
+}
+
+.colorw:active {
+    color: #62A6FD;
+}
+
+.following {
+    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: unset;
+}
+
+.absolute {
+    position: absolute;
+    background: #F7F3F1;
+    top: 50px;
+    border: solid 2px #EFE7E3;
+}
+
+.absolute2 {
+    position: absolute;
+    top: 12px;
+    height: 20px;
+    left: -32px;
+    width: 20px;
+}
+
+.suggestiondiv a {
+    color: unset;
+    text-decoration: unset;
+}
+
+.suggestiondiv:hover {
+    color: white;
+    background-color: #72D1FB;
+    transition: 125ms;
+}
+
+.link {
+    padding: 0 5px;
+    margin: 5px 0;
+}
+
+.makeprofile {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.avatarborder {
+    border: solid #1F51FF;
+}
+
+.avatar {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.avatar img {
+    height: 76px;
+    width: 76px;
+}
+
+.avatar img:hover {
+    height: 80px;
+    width: 80px;
+    transition: 125ms;
+}
+
+.changeprofile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+.changeprofile form {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border: solid 2px #EFE7E3;
+    position: relative;
+}
+
+.changeprofile p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+}
+
+.deletebutton {
+    top: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    padding: unset;
+    color: white;
+    background-color: white;
+    border: unset;
+    outline: unset;
+    background: transparent;
+    color: transparent;
+}
+
+.delete:hover button {
+    background-color: #FA9084;
+    color: white;
+    transition: 125ms;
+}
+
+
+
+@media (max-width: 1000px) {
+    header h1 {
+        display: none;
+    }
+}
+
+@media (max-width: 750px) {
+    .input {
+        width: 150px;
+    }
+
+    .content {
+        padding: 0 5vw;
+    }
+
+    .media {
+        flex-direction: column !important;
+    }
+
+    .mediaheadlinelogosmall {
+        flex-direction: column;
+    }
+
+    .mediamargintop {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 575px) {
+    .input {
+        width: 75px;
+    }
+
+    .content {
+        padding: 20px 10px;
+    }
+
+    .rail {
+        width: unset;
+        padding: unset;
+    }
+
+    .mediahide {
+        display: none;
+    }
+}
+
+@media (max-width: 504px) {
+    .rail {
+        display: none;
+    }
+
+    .comments {
+        min-height: unset;
+    }
+}
+
+@media (max-width: 474px) {
+    .absolute2 {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .input {
+        width: 45px;
+    }
+}
